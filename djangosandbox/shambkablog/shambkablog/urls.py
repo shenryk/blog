@@ -26,4 +26,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',TemplateView.as_view(template_name = "homepage.html"))
     
-    # 
+    # url(r'^$',TemplateView.as_view(template_name='homepage.html'))
+]

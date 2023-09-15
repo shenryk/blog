@@ -9,14 +9,15 @@ from django.template import loader
 
 context = {
    'author':'Anthony',
-   'content':"I am talking about"
+   'content':"I am talking about",
+   'body':"I am just writing about what happened"
 }
    
 
 
 def home(request):
    posts = context
-   return render (request,"index.html")
+   return render (request,"index.html",{'blog':context})
 
 def members(request):
    template = loader.get_template('members.html')
