@@ -5,11 +5,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is the home page</h1>
-    <br>
-    <a href="{%  url 'posts_home' %}">Read our posts here</a>
-    <br>
-    <h2>Get to Know our Community</h2>
-    <a href="{%  url 'members' %}">Community</a>
+    {% include 'navbar.html' %}
+    
+
+    {% block content %}
+
+    {% endblock %}
 </body>
 </html>

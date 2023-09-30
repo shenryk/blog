@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'main.html' %}
+
+{% block content %}
+    <h1>This is the home page</h1>
+    <br>
+    <a href="{%  url 'posts_home' %}">Read our posts here</a>
+    <br>
+    <h2>Get to Know our Community</h2>
+    <a href="{%  url 'members' %}">Community</a>
+   
     <h1>I will run my posts here</h1>
-    <div class="blog">
+    <div class="blog-section">
         <h2>{{ blog.author }}</h2>
         <p>{{ blog.content }}</p>
     </div>
+{% endblock content %}
     
 
-</body>
-</html>
