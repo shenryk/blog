@@ -8,4 +8,3 @@ urlpatterns = [
     path('members/',views.members,name="members")
 ]
     
-    

@@ -24,7 +24,7 @@ urlpatterns = [
     path('posts/',include('posts.urls')),
     path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
-    path('',TemplateView.as_view(template_name = "homepage.html"))
+    path('',TemplateView.as_view(template_name = "main.html"))
     
     # url(r'^$',TemplateView.as_view(template_name='homepage.html'))
 ]
